@@ -23,7 +23,7 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { Switch_6: true }
+  state = { Switch_6: true, TextInput_8: "" }
 
   render = () => (
     <View>
@@ -35,10 +35,16 @@ export default class Blank extends React.Component {
         }}
       />
       <Switch
-        trackColor={{ true: "#409EFF", false: "#C0CCDA" }}
+        trackColor={{ true: "#ff4242", false: "#C0CCDA" }}
         style={styles.Switch_6}
         value={this.state.Switch_6}
         onValueChange={nextChecked => this.setState({ Switch_6: nextChecked })}
+      />
+      <TextInput
+        placeholder="Number Input Placeholder"
+        keyboardType="numeric"
+        value={this.state.TextInput_8}
+        onChangeText={nextValue => this.setState({ TextInput_8: nextValue })}
       />
     </View>
   )
@@ -54,5 +60,9 @@ const styles = StyleSheet.create({
   Image_3: {},
   View_1: {},
   Image_3: {},
-  Switch_6: { alignSelf: "flex-start" }
+  Switch_6: { alignSelf: "flex-start" },
+  View_1: {},
+  Image_3: {},
+  Switch_6: { alignSelf: "flex-start" },
+  TextInput_8: {}
 })
