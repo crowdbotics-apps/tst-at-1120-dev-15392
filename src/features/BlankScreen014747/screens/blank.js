@@ -23,7 +23,7 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = { Switch_6: true }
 
   render = () => (
     <View>
@@ -34,6 +34,12 @@ export default class Blank extends React.Component {
             "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/giphy_logo_square_social_sGm3o0E.png"
         }}
       />
+      <Switch
+        trackColor={{ true: "#409EFF", false: "#C0CCDA" }}
+        style={styles.Switch_6}
+        value={this.state.Switch_6}
+        onValueChange={nextChecked => this.setState({ Switch_6: nextChecked })}
+      />
     </View>
   )
 }
@@ -43,6 +49,10 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
-  Image_3: {}
+  Image_3: {},
+  View_1: {},
+  Image_3: {},
+  Switch_6: { alignSelf: "flex-start" }
 })
