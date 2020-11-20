@@ -1,6 +1,6 @@
 import axios from "axios"
 const tstatAPI = axios.create({
-  baseURL: "https://tst-at-1120-dev-15392-prod.herokuapp.com/",
+  baseURL: "https://tst-at-1120-dev-15392.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_v1_customtext_list(action) {
