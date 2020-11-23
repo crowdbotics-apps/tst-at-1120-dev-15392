@@ -36,6 +36,7 @@ export default class Blank extends React.Component {
       <Text>Text with border radius</Text>
       <Button
         title="Button with border radius"
+        style={styles.Button_23}
         onPress={() => alert("Pressed!")}
       />
       <TextInput
@@ -88,9 +89,29 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
   Text_6: {},
   Button_23: {},
+  TextInput_37: {},
+  DateTimePicker_48: {},
+  Switch_79: { alignSelf: "flex-start" },
+  TextInput_52: {},
+  Image_82: { height: 50 },
+  Slider_84: { width: 100 },
+  Icon_86: {},
+  CheckBox_90: {},
+  View_1: {},
+  Text_6: {},
+  Button_23: {
+    color: "#de0d0d",
+    borderColor: "#d31717",
+    borderWidth: 4,
+    borderLeftWidth: 4,
+    borderRightWidth: 4,
+    borderTopWidth: 4,
+    borderBottomWidth: 4
+  },
   TextInput_37: {},
   DateTimePicker_48: {},
   Switch_79: { alignSelf: "flex-start" },
