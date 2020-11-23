@@ -42,7 +42,7 @@ export default class Blank extends React.Component {
         onValueChange={nextChecked => this.setState({ Switch_6: nextChecked })}
       />
       <TextInput
-        placeholder="Number Input Placeholder"
+        placeholder="Number Input Placeholder  "
         keyboardType="numeric"
         value={this.state.TextInput_8}
         onChangeText={nextValue => this.setState({ TextInput_8: nextValue })}
