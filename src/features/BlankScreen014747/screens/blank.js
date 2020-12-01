@@ -23,7 +23,7 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { Switch_6: true, TextInput_8: "" }
+  state = { Switch_6: true, TextInput_8: "", DateTimePicker_12: new Date("") }
 
   render = () => (
     <View>
@@ -42,10 +42,17 @@ export default class Blank extends React.Component {
         onValueChange={nextChecked => this.setState({ Switch_6: nextChecked })}
       />
       <TextInput
-        placeholder="Number Input Placeholder 123"
+        placeholder="Number Input Placeholder"
         keyboardType="numeric"
         value={this.state.TextInput_8}
         onChangeText={nextValue => this.setState({ TextInput_8: nextValue })}
+      />
+      <DateTimePicker
+        showIcon={false}
+        date={this.state.DateTimePicker_12}
+        onDateChange={selectedDate =>
+          this.setState({ DateTimePicker_12: selectedDate })
+        }
       />
     </View>
   )
@@ -69,5 +76,10 @@ const styles = StyleSheet.create({
   View_1: {},
   Image_3: { width: 300, height: 203 },
   Switch_6: { alignSelf: "flex-start" },
-  TextInput_8: {}
+  TextInput_8: {},
+  View_1: {},
+  Image_3: { width: 300, height: 203 },
+  Switch_6: { alignSelf: "flex-start" },
+  TextInput_8: {},
+  DateTimePicker_12: {}
 })
